@@ -1,0 +1,469 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Archivo', system-ui, sans-serif;
+    background: linear-gradient(180deg, #fbfaf8 0%, #f4f2ed 48%, #efece6 100%);
+    color: #0a0a0a;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: #e8480f;
+    color: #f4f2ed;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Fraunces', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+
+  /* Paper grain overlay across the whole site */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  }
+}
+
+@layer components {
+  .wrap {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: 22px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    padding: 14px 24px;
+    border-radius: 10px;
+    border: 1.5px solid #0a0a0a;
+    box-shadow: 0 8px 24px rgba(10, 10, 10, 0.06);
+    cursor: pointer;
+    text-decoration: none;
+    color: #0a0a0a;
+    background: transparent;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, color 0.18s ease;
+  }
+
+  .btn-solid {
+    background: #0a0a0a;
+    color: #f4f2ed;
+  }
+  .btn-solid:hover {
+    box-shadow: 8px 8px 0 #e8480f, 0 10px 30px rgba(232,72,15,0.08);
+    transform: translate(-3px, -3px);
+  }
+
+  .btn-ghost:hover {
+    background: #0a0a0a;
+    color: #f4f2ed;
+    box-shadow: 5px 5px 0 #e8480f;
+    transform: translate(-2px, -2px);
+  }
+
+  .btn-signal {
+    background: #e8480f;
+    color: #f4f2ed;
+    border-color: #e8480f;
+  }
+  .btn-signal:hover {
+    box-shadow: 8px 8px 0 #0a0a0a, 0 10px 30px rgba(10,10,10,0.06);
+    transform: translate(-3px, -3px);
+  }
+
+  .btn-inv {
+    border-color: #f4f2ed;
+    color: #f4f2ed;
+  }
+  .btn-inv:hover {
+    background: #f4f2ed;
+    color: #0a0a0a;
+  }
+
+  /* Eyebrow / section labels */
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #8a8780;
+    font-weight: 500;
+  }
+
+  .sec-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 26px;
+  }
+  .sec-label .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: #e8480f;
+    font-weight: 700;
+  }
+  .sec-label .nm {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #0a0a0a;
+  }
+  .sec-label .ln {
+    flex: 1;
+    height: 1px;
+    background: #cfccc4;
+  }
+
+  .card-border {
+    border: 1.5px solid #0a0a0a;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(10,10,10,0.04);
+  }
+
+  /* Hero tweaks */
+  .hero-title-shadow {
+    text-shadow: 0 10px 30px rgba(10,10,10,0.06);
+  }
+
+  /* Services zig-zag visuals */
+  .service-row {
+    position: relative;
+    padding: 1.25rem 0; /* tighter vertical rhythm */
+    margin-inline: 0;
+  }
+
+  .service-ornament {
+    position: absolute;
+    top: 6px;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 56px; /* much smaller */
+    font-weight: 800;
+    color: rgba(10,10,10,0.04);
+    pointer-events: none;
+    z-index: 0;
+    transform: translateY(-4px);
+    letter-spacing: -0.02em;
+  }
+
+  .service-row.left .service-ornament {
+    right: 2rem;
+  }
+
+  .service-row.right .service-ornament {
+    left: 2rem;
+  }
+
+  .service-image-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px; /* tighter */
+    width: 100%;
+  }
+
+  .service-image-box img {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .service-badge {
+    display: none;
+  }
+
+  /* dashed connector between image and text on md+ screens */
+  .connector {
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    border-top: 2px dashed #2a2a2a;
+    width: 120px; /* controlled length */
+    transform: translateY(-50%);
+    opacity: 0.6;
+    z-index: 5;
+  }
+
+  /* place connector near middle between image and content */
+  .service-row.left .connector {
+    left: calc(38% - 60px);
+  }
+
+  .service-row.right .connector {
+    left: calc(62% - 60px);
+  }
+
+  @media (max-width: 767px) {
+    .service-ornament { display: none; }
+    .connector { display: none; }
+    .service-image-box { margin-bottom: 1rem; }
+  }
+
+  /* Smaller heading for compact services rows */
+  .service-row h3 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.05;
+  }
+
+  .service-row p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .grain-dark::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.06;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================
+   Hero — Mark composition (right side), styled after reference
+   Monochrome (brand black/white/gray). Additive only.
+   ============================================================ */
+@keyframes mark-float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-7px)} }
+@keyframes node-bob   { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+@keyframes arc-dash   { to { stroke-dashoffset: -120; } }
+/* clockwise orbit around Mark's center; content stays upright via inner counter-rotation.
+   --a0 = per-node start angle; --recenter = vertical shift to a shared orbit center;
+   --r = orbit radius. Outer rotate orbits, translate sets radius, inner rotate cancels tilt. */
+@keyframes node-orbit {
+  from { transform: translate(var(--recenter-x), var(--recenter-y)) rotate(var(--a0))                translateY(calc(-1 * var(--r))); }
+  to   { transform: translate(var(--recenter-x), var(--recenter-y)) rotate(calc(var(--a0) + 360deg)) translateY(calc(-1 * var(--r))); }
+}
+@keyframes node-upright {
+  from { transform: rotate(calc(-1 * var(--a0))); }
+  to   { transform: rotate(calc(-1 * (var(--a0) + 360deg))); }
+}
+
+.mark-stage {
+  position: relative;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* soft circular backdrop behind Mark */
+.mark-circle {
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  width: 360px;
+  height: 360px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 45%,
+    #ffffff 0%,
+    #f0eee8 55%,
+    rgba(240,238,232,0) 72%);
+  z-index: 0;
+}
+
+/* Mark idle float */
+.mark-img {
+  animation: mark-float 6s ease-in-out infinite;
+  will-change: transform;
+}
+.mark-img:hover { animation-play-state: paused; }
+
+/* thought bubble (rounded, with trailing dots) */
+.mark-bubble {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  z-index: 3;
+  max-width: 210px;
+  background: #ffffff;
+  border: 1.5px solid #0a0a0a;
+  border-radius: 22px;
+  padding: 15px 18px;
+  box-shadow: 0 8px 22px rgba(10,10,10,0.08);
+}
+.mark-bubble-dot {
+  position: absolute;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1.5px solid #0a0a0a;
+}
+.mark-bubble-dot-1 { width: 12px; height: 12px; bottom: -16px; right: 34px; }
+.mark-bubble-dot-2 { width: 8px;  height: 8px;  bottom: -28px; right: 26px; }
+.mark-bubble-dot-3 { width: 5px;  height: 5px;  bottom: -38px; right: 20px; }
+
+/* dotted curved arc */
+.mark-arc {
+  position: absolute;
+  top: 6%;
+  right: 16%;
+  width: 30%;
+  height: 88%;
+  z-index: 1;
+  pointer-events: none;
+}
+.mark-arc path { animation: arc-dash 7s linear infinite; }
+
+/* right-side vertical icon rail */
+.mark-rail {
+  position: absolute;
+  top: 50%;
+  right: -2%;
+  transform: translateY(-50%);
+  z-index: 1; /* orbit sits behind Mark (z-2) so nodes pass behind his head/body */
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.mark-node {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: default;
+  --r: 168px;          /* orbit radius (more breathing room while clearing bubble + section edge) */
+  --a0: 0deg;          /* per-node start angle */
+  --recenter-x: -120px;/* shift node so the icon orbits Mark's center, not the rail */
+  --recenter-y: 0px;   /* cancels flex-column offset to share one orbit center */
+  transform-origin: 21px center;  /* pivot on the icon, not the wide text box */
+  animation: node-orbit 28s linear infinite;
+  will-change: transform;
+}
+.mark-node:nth-child(1) { --a0: 0deg;   --recenter-y: 76px; }
+.mark-node:nth-child(2) { --a0: 120deg; --recenter-y: 0px; }
+.mark-node:nth-child(3) { --a0: 240deg; --recenter-y: -76px; }
+/* counter-rotate inner content so icon + text stay upright and readable */
+.mark-node-icon,
+.mark-node-text {
+  animation: node-upright 28s linear infinite;
+  will-change: transform;
+}
+.mark-node-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  flex: none;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1.5px solid #0a0a0a;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.mark-node-text {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.3;
+  color: #0a0a0a;
+  transition: color 0.25s ease;
+  white-space: nowrap;
+}
+.mark-node-text em {
+  font-style: normal;
+  font-weight: 500;
+  color: #8a8a85;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 10.5px;
+}
+.mark-node:hover,
+.mark-node:hover .mark-node-icon,
+.mark-node:hover .mark-node-text {
+  animation-play-state: paused;
+}
+.mark-node:hover .mark-node-icon {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(10,10,10,0.16);
+}
+.mark-node:hover .mark-node-text { color: #000; }
+
+/* responsive */
+@media (max-width: 1024px) {
+  .mark-circle { width: 300px; height: 300px; }
+  .mark-rail { right: 0; gap: 26px; }
+  .mark-node-text { font-size: 10px; }
+}
+@media (max-width: 767px) {
+  .mark-stage { min-height: auto; flex-direction: column; padding-top: 20px; }
+  .mark-circle { width: 280px; height: 280px; top: 58%; left: 50%; }
+  .mark-bubble { position: relative; top: 0; left: 0; margin: 0 auto 16px; }
+  .mark-bubble-dot { display: none; }
+  .mark-arc { display: none; }
+  .mark-rail {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 22px;
+  }
+  .mark-node {
+    animation: none;
+    transform: none;
+    transform-origin: center;
+  }
+  .mark-node-icon,
+  .mark-node-text { animation: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mark-img, .mark-node, .mark-arc path,
+  .mark-node-icon, .mark-node-text { animation: none !important; }
+  .mark-node { transform: none !important; transform-origin: center !important; }
+}
