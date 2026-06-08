@@ -491,7 +491,7 @@ export default function Home() {
             whileInView="show"
             viewport={viewportOnce}
           >
-            <SectionLabel num="06" name="Questions" />
+            <SectionLabel num="0" name="Questions" />
             <h2 className="font-display text-3xl font-600 leading-[1.1] md:text-5xl">
               Frequently{' '}
               <span className="italic text-signal">asked.</span>
