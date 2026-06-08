@@ -249,7 +249,7 @@ export default function Home() {
             whileInView="show"
             viewport={viewportOnce}
           >
-            <SectionLabel num="02" name="What we do" />
+            <SectionLabel num="03" name="What we do" />
             <h2 className="font-display text-4xl font-600 leading-[1.05] md:text-6xl">
               Six services.{' '}
               <span className="block italic">One team.</span>
@@ -325,7 +325,7 @@ export default function Home() {
             whileInView="show"
             viewport={viewportOnce}
           >
-            <SectionLabel num="03" name="How we work" />
+            <SectionLabel num="04" name="How we work" />
             <h2 className="mb-12 max-w-2xl font-display text-3xl font-600 leading-[1.1] md:text-5xl">
               A clear path from{' '}
               <span className="italic text-signal">idea to growth.</span>
@@ -371,7 +371,7 @@ export default function Home() {
             whileInView="show"
             viewport={viewportOnce}
           >
-            <SectionLabel num="04" name="Featured work" />
+            <SectionLabel num="05" name="Featured work" />
             <h2 className="font-display text-4xl font-600 leading-[1.05] md:text-6xl">
               Work that moves{' '}
               <span className="italic">the needle.</span>
@@ -491,7 +491,7 @@ export default function Home() {
             whileInView="show"
             viewport={viewportOnce}
           >
-            <SectionLabel num="05" name="Questions" />
+            <SectionLabel num="06" name="Questions" />
             <h2 className="font-display text-3xl font-600 leading-[1.1] md:text-5xl">
               Frequently{' '}
               <span className="italic text-signal">asked.</span>
