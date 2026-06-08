@@ -31,7 +31,7 @@ export default function Services() {
             <span className="font-500 italic">One team.</span>
           </>
         }
-        lead="Everything a modern brand needs to grow — introduced, as always, by Mark. Strategy, story, creative, content and paid growth, delivered under one roof."
+        lead="Everything a modern brand needs to grow -introduced, as always, by Mark. Strategy, story, creative, content and paid growth, delivered under one roof."
       />
 
       <Marquee

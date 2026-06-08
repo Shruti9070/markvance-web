@@ -1,4 +1,4 @@
-# MARKVANCE — Marketing Agency Website
+# MARKVANCE -Marketing Agency Website
 
 A complete, production-ready marketing-agency website for **Markvance**, built
 from the supplied wireframe. Editorial / brutalist aesthetic (Fraunces + Archivo
@@ -68,7 +68,7 @@ npm run preview  # preview the production build
 
 ## Notes
 
-- All content lives in `src/data.js` — edit there to update copy site-wide.
+- All content lives in `src/data.js` -edit there to update copy site-wide.
 - The contact form is front-end only; wire `onSubmit` in `pages/Contact.jsx` to
   your backend or a form service (Formspree, etc.).
 - SEO: per-page `<title>`/meta can be added with `react-helmet-async` if needed;

@@ -19,7 +19,7 @@ export default function Founders() {
     <section className="wrap py-16 md:py-24">
       <div className="mb-12">
         <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={viewportOnce}>
-          <SectionLabel num="06" name="Meet the founders" />
+          <SectionLabel num="02" name="Meet the founders" />
           <h2 className="font-display text-3xl font-600 leading-[1.1] md:text-5xl">
             The people who build with founders.
           </h2>

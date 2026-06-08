@@ -49,7 +49,7 @@ export default function Home() {
               className="mt-6 max-w-md text-[16px] leading-relaxed text-neutral-700"
             >
               Through strategy, creativity, positioning and storytelling, we
-              transform products into memorable brands — for founders, creators
+              transform products into memorable brands -for founders, creators
               and ambitious brands, executed alongside you from day one.
             </motion.p>
             <motion.div variants={fadeUp} className="mt-7 flex flex-wrap gap-3">
@@ -210,7 +210,7 @@ export default function Home() {
             className="max-w-3xl font-display text-3xl font-500 leading-[1.15] md:text-5xl"
           >
             Most agencies disappear after the GTM doc.{' '}
-            <span className="font-900">We stay. We execute</span> — strategy,
+            <span className="font-900">We stay. We execute</span> -strategy,
             creative and growth under one roof.
           </motion.h2>
 
@@ -249,7 +249,7 @@ export default function Home() {
             whileInView="show"
             viewport={viewportOnce}
           >
-            <SectionLabel num="02" name="What we do" />
+            <SectionLabel num="03" name="What we do" />
             <h2 className="font-display text-4xl font-600 leading-[1.05] md:text-6xl">
               Six services.{' '}
               <span className="block italic">One team.</span>
@@ -262,8 +262,8 @@ export default function Home() {
             viewport={viewportOnce}
             className="max-w-sm text-[14px] leading-relaxed text-neutral-600"
           >
-            Everything a modern brand needs to grow — strategy, story, content,
-            community and paid growth — delivered by one team that actually
+            Everything a modern brand needs to grow -strategy, story, content,
+            community and paid growth -delivered by one team that actually
             executes.
           </motion.p>
         </div>
@@ -325,7 +325,7 @@ export default function Home() {
             whileInView="show"
             viewport={viewportOnce}
           >
-            <SectionLabel num="03" name="How we work" />
+            <SectionLabel num="04" name="How we work" />
             <h2 className="mb-12 max-w-2xl font-display text-3xl font-600 leading-[1.1] md:text-5xl">
               A clear path from{' '}
               <span className="italic text-signal">idea to growth.</span>
@@ -371,7 +371,7 @@ export default function Home() {
             whileInView="show"
             viewport={viewportOnce}
           >
-            <SectionLabel num="04" name="Featured work" />
+            <SectionLabel num="05" name="Featured work" />
             <h2 className="font-display text-4xl font-600 leading-[1.05] md:text-6xl">
               Work that moves{' '}
               <span className="italic">the needle.</span>
@@ -491,7 +491,7 @@ export default function Home() {
             whileInView="show"
             viewport={viewportOnce}
           >
-            <SectionLabel num="05" name="Questions" />
+            <SectionLabel num="0" name="Questions" />
             <h2 className="font-display text-3xl font-600 leading-[1.1] md:text-5xl">
               Frequently{' '}
               <span className="italic text-signal">asked.</span>

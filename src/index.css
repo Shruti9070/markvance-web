@@ -274,7 +274,7 @@
 }
 
 /* ============================================================
-   Hero — Mark composition (right side), styled after reference
+   Hero -Mark composition (right side), styled after reference
    Monochrome (brand black/white/gray). Additive only.
    ============================================================ */
 @keyframes mark-float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-7px)} }
