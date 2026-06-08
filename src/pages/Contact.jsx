@@ -50,7 +50,7 @@ export default function Contact() {
             <span className="font-500 italic">growth engine.</span>
           </>
         }
-        lead="Tell us where you are and where you want to go. We'll come back with a focused plan and a free strategy call — no decks, no fluff."
+        lead="Tell us where you are and where you want to go. We'll come back with a focused plan and a free strategy call -no decks, no fluff."
       />
 
       <section className="wrap py-12 md:py-16">
@@ -70,7 +70,7 @@ export default function Contact() {
                 </div>
                 <h2 className="font-display text-3xl font-600">Message sent.</h2>
                 <p className="mt-3 max-w-sm text-[15px] leading-relaxed text-neutral-600">
-                  Thanks, {form.name.split(' ')[0] || 'there'} — we've got it.
+                  Thanks, {form.name.split(' ')[0] || 'there'} -we've got it.
                   Expect a reply from the Markvance team within one business day.
                 </p>
                 <button

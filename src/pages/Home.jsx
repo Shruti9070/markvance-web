@@ -49,7 +49,7 @@ export default function Home() {
               className="mt-6 max-w-md text-[16px] leading-relaxed text-neutral-700"
             >
               Through strategy, creativity, positioning and storytelling, we
-              transform products into memorable brands — for founders, creators
+              transform products into memorable brands -for founders, creators
               and ambitious brands, executed alongside you from day one.
             </motion.p>
             <motion.div variants={fadeUp} className="mt-7 flex flex-wrap gap-3">
@@ -210,7 +210,7 @@ export default function Home() {
             className="max-w-3xl font-display text-3xl font-500 leading-[1.15] md:text-5xl"
           >
             Most agencies disappear after the GTM doc.{' '}
-            <span className="font-900">We stay. We execute</span> — strategy,
+            <span className="font-900">We stay. We execute</span> -strategy,
             creative and growth under one roof.
           </motion.h2>
 
@@ -262,8 +262,8 @@ export default function Home() {
             viewport={viewportOnce}
             className="max-w-sm text-[14px] leading-relaxed text-neutral-600"
           >
-            Everything a modern brand needs to grow — strategy, story, content,
-            community and paid growth — delivered by one team that actually
+            Everything a modern brand needs to grow -strategy, story, content,
+            community and paid growth -delivered by one team that actually
             executes.
           </motion.p>
         </div>

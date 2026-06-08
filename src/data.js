@@ -5,7 +5,7 @@ export const BRAND = {
   name: 'MARKVANCE',
   tagline: 'Advancing growth through smarter marketing.',
   blurb:
-    'A full-stack marketing agency for founders, creators & ambitious brands. Strategy, creative and growth — under one roof.',
+    'A full-stack marketing agency for founders, creators & ambitious brands. Strategy, creative and growth -under one roof.',
   phone: '+91 8006986871',
   phoneHref: 'tel:+918006986871',
   email: 'hello@markvance.com',
@@ -33,7 +33,7 @@ export const DIFFERENTIATORS = [
   },
   {
     title: 'Execution',
-    body: 'We run the playbook from day one — not just write it. Plans only matter when they ship.',
+    body: 'We run the playbook from day one -not just write it. Plans only matter when they ship.',
   },
   {
     title: 'One Team',
@@ -59,7 +59,7 @@ export const SERVICES = [
     intro: 'Mark feeds your channels',
     short: 'Grow your presence across every channel.',
     long:
-      'Managing and growing brand presence across Instagram, LinkedIn, YouTube, Facebook, X (Twitter) and other digital channels. We create posts, reels, videos, carousels, scripts, captions and campaign content that attracts attention and builds engagement — plus blogs, newsletters, case studies, website content and long-form content that builds credibility and supports business growth.',
+      'Managing and growing brand presence across Instagram, LinkedIn, YouTube, Facebook, X (Twitter) and other digital channels. We create posts, reels, videos, carousels, scripts, captions and campaign content that attracts attention and builds engagement -plus blogs, newsletters, case studies, website content and long-form content that builds credibility and supports business growth.',
     deliverables: ['Content strategy', 'Visual storytelling', 'Campaign ideas', 'Account handling', 'Audience engagement'],
   },
   {
@@ -118,7 +118,7 @@ export const PROCESS = [
   {
     n: '03',
     title: 'Build',
-    body: 'Brand, content, site and creative get produced in-house and shipped — fast.',
+    body: 'Brand, content, site and creative get produced in-house and shipped -fast.',
   },
   {
     n: '04',
@@ -131,7 +131,7 @@ export const TEAM = [
   {
     name: 'Aarushi Chauhan',
     role: 'Startup Mentor · Growth & Fundraising Strategist',
-    bio: 'Helps founders turn raw ideas into structured, market-ready and fundable businesses — across market research, positioning, GTM, pitch decks, financial projections, fundraising documentation and investor connects.',
+    bio: 'Helps founders turn raw ideas into structured, market-ready and fundable businesses -across market research, positioning, GTM, pitch decks, financial projections, fundraising documentation and investor connects.',
     stats: [
       { v: '4,200+', l: 'Founders mentored' },
       { v: 'EMBA', l: 'K J Somaiya' },
@@ -145,7 +145,7 @@ export const FOUNDERS = [
     role: 'Co-founder · CBO',
     title: 'The ecosystem architect',
     image: 'aarushi.png',
-    bio: "Chief Business Officer at Lavi Software & Technology Pvt Ltd and a startup mentor who has guided 4,200+ founders from idea stage to investor readiness — across market research, positioning, GTM, pitch decks, financial projections and investor connects.",
+    bio: "Chief Business Officer at Lavi Software & Technology Pvt Ltd and a startup mentor who has guided 4,200+ founders from idea stage to investor readiness -across market research, positioning, GTM, pitch decks, financial projections and investor connects.",
     bullets: [
       'Mentored 4,200+ startup founders',
       'Fundraising readiness & investor communication',
@@ -166,7 +166,7 @@ export const FOUNDERS = [
   },
 ]
 
-// Full founder profiles — sourced entirely from the official Markvance content.
+// Full founder profiles -sourced entirely from the official Markvance content.
 export const FOUNDER_PROFILES = [
   {
     name: 'Sumit Yadav',
@@ -174,7 +174,7 @@ export const FOUNDER_PROFILES = [
     role: 'Co-founder',
     headline: 'Angel Investor | Director at Lavi Software & Technology Pvt Ltd | Backing founders across marketing, fintech, D2C, AI, and technology',
     bio: [
-      'Sumit is an angel investor and operator who backs founders across marketing, fintech, D2C, AI, and technology. With a ₹12 crore investment corpus deployed across multiple startups, his focus is on how businesses actually scale — through market positioning, brand visibility, customer acquisition, and execution, not capital alone.',
+      'Sumit is an angel investor and operator who backs founders across marketing, fintech, D2C, AI, and technology. With a ₹12 crore investment corpus deployed across multiple startups, his focus is on how businesses actually scale -through market positioning, brand visibility, customer acquisition, and execution, not capital alone.',
       'As Director at Lavi Software & Technology, he is connected to a technology-first ecosystem building scalable digital systems, SaaS platforms, fintech solutions, and software infrastructure for modern businesses.',
     ],
     positioning: [
@@ -187,7 +187,7 @@ export const FOUNDER_PROFILES = [
       'Building visibility, trust, and long-term business value',
     ],
     roles: [
-      { org: 'Lavi Software & Technology Pvt Ltd', detail: 'Director — technology-first ecosystem building scalable digital systems, SaaS platforms, fintech solutions and software infrastructure.' },
+      { org: 'Lavi Software & Technology Pvt Ltd', detail: 'Director -technology-first ecosystem building scalable digital systems, SaaS platforms, fintech solutions and software infrastructure.' },
       { org: 'Previously', detail: 'Riley Cillian Corp · Asia Innovation Group · Synergy Exchange.' },
     ],
     quote: 'Capital should not just fund companies. It should help founders build visibility, trust, distribution, and long-term business value.',
@@ -210,15 +210,15 @@ export const FOUNDER_PROFILES = [
       'AI-powered marketing solutions',
     ],
     roles: [
-      { org: 'Lavi Software & Technology Pvt Ltd', detail: 'Chief Business Officer — business vision, strategy, growth roadmap, revenue opportunities, product-business alignment, operations, team management, GTM strategy, customer acquisition, partnerships and market positioning.' },
-      { org: 'Previously', detail: 'RISE — Jhansi · AIM4BIG · The Bharat Groups · Intellibus' },
+      { org: 'Lavi Software & Technology Pvt Ltd', detail: 'Chief Business Officer -business vision, strategy, growth roadmap, revenue opportunities, product-business alignment, operations, team management, GTM strategy, customer acquisition, partnerships and market positioning.' },
+      { org: 'Previously', detail: 'RISE -Jhansi · AIM4BIG · The Bharat Groups · Intellibus' },
     ],
-    education: 'Executive MBA in Marketing — K J Somaiya Institute of Management',
+    education: 'Executive MBA in Marketing -K J Somaiya Institute of Management',
     quote: 'Make the startup clear enough for customers to understand, strong enough for the market to notice, and credible enough for investors to trust.',
   },
 ]
 
-// Featured Work — placeholder slots until real Markvance projects are supplied.
+// Featured Work -placeholder slots until real Markvance projects are supplied.
 // Each card is intentionally marked as a placeholder; swap in real projects
 // (title, category, summary, optional metric) when available.
 export const WORK = [
@@ -227,7 +227,7 @@ export const WORK = [
     tag: 'Branding',
     role: 'Add service line',
     metric: 'Add a result',
-    summary: 'A short, honest description of a real Markvance engagement goes here — the challenge, what we did, and the outcome.',
+    summary: 'A short, honest description of a real Markvance engagement goes here -the challenge, what we did, and the outcome.',
     isPlaceholder: true,
   },
   {
@@ -235,7 +235,7 @@ export const WORK = [
     tag: 'Content',
     role: 'Add service line',
     metric: 'Add a result',
-    summary: 'A short, honest description of a real Markvance engagement goes here — the challenge, what we did, and the outcome.',
+    summary: 'A short, honest description of a real Markvance engagement goes here -the challenge, what we did, and the outcome.',
     isPlaceholder: true,
   },
   {
@@ -243,22 +243,22 @@ export const WORK = [
     tag: 'GTM',
     role: 'Add service line',
     metric: 'Add a result',
-    summary: 'A short, honest description of a real Markvance engagement goes here — the challenge, what we did, and the outcome.',
+    summary: 'A short, honest description of a real Markvance engagement goes here -the challenge, what we did, and the outcome.',
     isPlaceholder: true,
   },
 ]
 
-// Testimonials — placeholder slots reserved for real client reviews.
+// Testimonials -placeholder slots reserved for real client reviews.
 export const TESTIMONIALS = [
-  { quote: 'Your review here — real client feedback will appear in this space.', name: 'Client name', role: 'Company / role', isPlaceholder: true },
-  { quote: 'Your review here — real client feedback will appear in this space.', name: 'Client name', role: 'Company / role', isPlaceholder: true },
-  { quote: 'Your review here — real client feedback will appear in this space.', name: 'Client name', role: 'Company / role', isPlaceholder: true },
+  { quote: 'Your review here -real client feedback will appear in this space.', name: 'Client name', role: 'Company / role', isPlaceholder: true },
+  { quote: 'Your review here -real client feedback will appear in this space.', name: 'Client name', role: 'Company / role', isPlaceholder: true },
+  { quote: 'Your review here -real client feedback will appear in this space.', name: 'Client name', role: 'Company / role', isPlaceholder: true },
 ]
 
 export const FAQ = [
   {
     q: 'How is Markvance different from a typical agency?',
-    a: 'Most agencies hand over a strategy and step back. We build it with you and stay to execute — strategy, creative, content and growth live under one roof and one team.',
+    a: 'Most agencies hand over a strategy and step back. We build it with you and stay to execute -strategy, creative, content and growth live under one roof and one team.',
   },
   {
     q: 'Do you work with early-stage founders or only established brands?',
@@ -266,7 +266,7 @@ export const FAQ = [
   },
   {
     q: 'Can I engage you for just one service?',
-    a: 'Yes. You can start with a single service line — say content or website & SEO — and expand into the full stack as it makes sense. Nothing is forced.',
+    a: 'Yes. You can start with a single service line -say content or website & SEO -and expand into the full stack as it makes sense. Nothing is forced.',
   },
   {
     q: 'How do engagements usually start?',

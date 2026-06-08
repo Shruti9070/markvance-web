@@ -20,11 +20,11 @@ const VALUES = [
   },
   {
     title: 'One team, no handoffs',
-    body: 'Brand, content, web and growth sit together — so nothing gets lost in translation.',
+    body: 'Brand, content, web and growth sit together -so nothing gets lost in translation.',
   },
   {
     title: 'Tied to revenue',
-    body: 'We measure ourselves in pipeline, customers and growth — not impressions and vanity metrics.',
+    body: 'We measure ourselves in pipeline, customers and growth -not impressions and vanity metrics.',
   },
   {
     title: 'Founders first',
@@ -55,7 +55,7 @@ export default function About() {
             <span className="font-500 italic">advances</span> your brand.
           </>
         }
-        lead="Markvance is a full-stack marketing agency for founders, creators and ambitious brands — strategy, creative and growth under one roof, backed by 25+ years of cumulative experience in marketing, branding and fundraising."
+        lead="Markvance is a full-stack marketing agency for founders, creators and ambitious brands -strategy, creative and growth under one roof, backed by 25+ years of cumulative experience in marketing, branding and fundraising."
       />
 
       {/* Story */}
@@ -68,7 +68,9 @@ export default function About() {
             viewport={viewportOnce}
           >
             <h2 className="font-display text-3xl font-600 leading-[1.1] md:text-5xl">
-              The name says it. <span className="italic text-signal">Mark + adVANCE.</span>
+              The name says it. 
+              <div className="italic text-signal">Mark + adVANCE.</div>
+
             </h2>
           </motion.div>
           <motion.div
@@ -82,12 +84,12 @@ export default function About() {
               Markvance was built on a simple frustration: too many brands were
               handed a beautiful strategy deck and then left to figure out the
               hard part alone. We do the opposite. We build the strategy with
-              you — and then we stay to execute it.
+              you -and then we stay to execute it.
             </motion.p>
             <motion.p variants={fadeUp}>
               With 25+ years of cumulative experience, our team has shaped
               brands, grown audiences and mentored founders from raw idea to
-              investor-ready. That range — strategy, brand, content and growth —
+              investor-ready. That range -strategy, brand, content and growth —
               now lives under one roof.
             </motion.p>
           </motion.div>
@@ -102,7 +104,7 @@ export default function About() {
           className="mt-16 border-l-4 border-signal pl-6 font-display text-2xl font-500 italic leading-snug md:text-4xl"
         >
           "We're not here to simply create your GTM strategy and hand over a
-          document. We work alongside you — and execute the strategy from day
+          document. We work alongside you -and execute the strategy from day
           one."
         </motion.blockquote>
       </section>
@@ -144,7 +146,7 @@ export default function About() {
             </h2>
             <p className="mt-4 max-w-md text-[15px] leading-relaxed text-neutral-700">
               Mark is our mascot and your guide across everything we do. Friendly,
-              sharp and always on — he's the through-line that keeps Markvance
+              sharp and always on -he's the through-line that keeps Markvance
               feeling like one team rather than a stack of vendors.
             </p>
             <Link to="/services" className="btn btn-solid mt-6">
