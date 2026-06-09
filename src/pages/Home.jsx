@@ -16,6 +16,7 @@ import {
   FAQ,
 } from '../data.js'
 import { fadeUp, fadeIn, stagger, popIn, viewportOnce } from '../lib/motion.js'
+import ServiceMedia from "../components/ServiceMedia";
 
 function SectionLabel({ num, name }) {
   return (
@@ -289,9 +290,14 @@ export default function Home() {
                   variants={popIn}
                   className={`relative order-1 md:order-${i % 2 === 0 ? '1' : '2'} flex items-center justify-center`}
                 >
-                  <div className="service-image-box w-full max-w-sm">
+                  <div className="service-image-box w-full max-w-sm h-[265px] md:h-[330px] overflow-hidden">
                     <span className="service-badge">M</span>
-                    <img src={markMascot} alt={s.name} />
+                    {/* <img src={markMascot} alt={s.name} /> */}
+                    <ServiceMedia
+                      video={s.video}
+                      fallback={markMascot}
+                      alt={s.name}
+                    />
                   </div>
                 </motion.div>
 
@@ -328,7 +334,7 @@ export default function Home() {
             <SectionLabel num="04" name="How we work" />
             <h2 className="mb-12 max-w-2xl font-display text-3xl font-600 leading-[1.1] md:text-5xl">
               A clear path from{' '}
-              <span className="italic text-signal">idea to growth.</span>
+              <div className="italic text-signal">idea to growth.</div>
             </h2>
           </motion.div>
 

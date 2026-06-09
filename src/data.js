@@ -1,5 +1,6 @@
 // Single source of truth for all site content, extracted & improved from the
 // MARKVANCE wireframe.
+import contentSocialMedia from "./assets/videos/contentSocialMedia4.mp4"
 
 export const BRAND = {
   name: 'MARKVANCE',
@@ -46,6 +47,7 @@ export const SERVICES = [
     id: 'personal-branding',
     num: '01',
     name: 'Personal Branding',
+    
     intro: 'Mark builds your authority',
     short: 'Build authority for founders, entrepreneurs and creators.',
     long:
@@ -56,6 +58,7 @@ export const SERVICES = [
     id: 'content-social',
     num: '02',
     name: 'Content & Social Media',
+    video: contentSocialMedia,
     intro: 'Mark feeds your channels',
     short: 'Grow your presence across every channel.',
     long:
